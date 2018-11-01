@@ -56,3 +56,20 @@ body {
     min-width: 300px;
     height: 50%;
 }
+.tz-gallery .caption p {
+    line-height: 2;
+    color:rgb(49, 49, 49);
+    padding: 15px;
+}
+
+img[src="images/bckgnd.jpg"]{
+    filter: blur(8px);
+    -webkig-filter: blur(8px);
+}
+
+a[href="images/bckgnd.jpg"]{
+    pointer-events:none;
+    cursor:default;
+    text-decoration: none;
+    
+}
