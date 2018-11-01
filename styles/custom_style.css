@@ -1,0 +1,58 @@
+body {
+    background-color: #fff;
+}
+
+.gallery-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #58595a;
+}
+
+
+.gallery-container p.page-description {
+    font-size: 22px;
+    color: #85878c;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.tz-gallery {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.tz-gallery img {
+    border-radius: 6px;
+}
+
+.tz-gallery .caption{
+    padding: 15px 5px; /*primer numero padding vertical, segon horitzontal*/
+}
+
+.tz-gallery .caption h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.tz-gallery .caption p {
+/*default:    font-size: 12px; */
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.thumbnail img {
+    max-height: 300px;
+}
+
+.thumbnail a > img {
+    object-fit: cover;
+    min-width: 300px;
+    height: 50%;
+}

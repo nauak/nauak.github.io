@@ -16,23 +16,89 @@
 
     <!-- Font utilitzada -->
     
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <!--link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"-->
+    <!-- Roboto! -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"-->
 
     <!-- gallery styles -->
     <link rel="stylesheet" href="styles/baguetteBox.min.css">
     <link rel="stylesheet" href="styles/gallery-clean.css">
 
 
+    <!-- Return to top button styles -->
+    <!--style>
+        .back-to-top{
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display:none;
+        }
+    </style-->
+    <style>
+    #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+</style>
+
+<link rel="stylesheet" href="styles/custom_style.css">
+
 </head>
 
 <body>
 
+    <a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        
+
+        
     <div class="container gallery-container">
 
-        <h1>Bootstrap 3 Gallery</h1>
+        <h1>Marc & Ivette</h1>
     
-        <p class="page-description text-center">Clean Layout With Minimal Styles</p>
+        <p class="page-description text-center">6 anys i molts més</p>
         
         <div class="tz-gallery">
     
@@ -40,44 +106,47 @@
     
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="images/park.jpg">
-                            <img src="images/park.jpg" alt="Park">
+                        <a class="lightbox" href="images/11-1.jpeg">
+                            <img src="images/11-1.jpeg" alt="Park">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>1 Novembre 2018</h3>
+                            <p>El dia que tu i jo vam passar a ser nosaltres. El dia en que tot va començar.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="images/bridge.jpg">
-                            <img src="images/bridge.jpg" alt="Bridge">
+                        <a class="lightbox" href="images/black.png">
+                            <img src="images/black.png" alt="Bridge">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>2 Novembre 2018</h3>
+                            <p></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="images/tunnel.jpg">
-                            <img src="images/tunnel.jpg" alt="Tuneel">
+                        <a class="lightbox" href="images/11-2.jpg">
+                            <img src="images/11-2.jpg" alt="Tuneel">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>3 Novembre 2018</h3>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <a class="lightbox" href="images/coast.jpg">
                             <img src="images/coast.jpg" alt="Coast">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
+                            <h3>4 Novembre 2018</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -88,7 +157,7 @@
                             <img src="images/rails.jpg" alt="Rails">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
+                            <h3>5 Novembre 2018</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
@@ -99,22 +168,641 @@
                             <img src="images/traffic.jpg" alt="Traffic">
                         </a>
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
+                            <h3>6 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>7 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>8 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>9 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>10 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>11 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>12 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>13 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>14 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>15 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>16 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>17 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>18 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>19 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>20 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>21 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>22 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>23 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>24 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>25 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>26 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>27 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>28 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>29 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>30 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>31 Novembre 2018</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
+
+
+            <div class="row">
     
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/park.jpg">
+                            <img src="images/park.jpg" alt="Park">
+                        </a>
+                        <div class="caption">
+                            <h3>1 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/bridge.jpg">
+                            <img src="images/bridge.jpg" alt="Bridge">
+                        </a>
+                        <div class="caption">
+                            <h3>2 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/tunnel.jpg">
+                            <img src="images/tunnel.jpg" alt="Tuneel">
+                        </a>
+                        <div class="caption">
+                            <h3>3 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/coast.jpg">
+                            <img src="images/coast.jpg" alt="Coast">
+                        </a>
+                        <div class="caption">
+                            <h3>4 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/rails.jpg">
+                            <img src="images/rails.jpg" alt="Rails">
+                        </a>
+                        <div class="caption">
+                            <h3>5 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>6 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>7 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>8 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>9 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>10 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>11 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>12 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>13 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>14 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>15 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>16 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>17 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>18 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>19 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>20 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>21 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>22 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>23 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>24 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>25 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>26 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>27 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>28 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>29 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>30 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="images/traffic.jpg">
+                            <img src="images/traffic.jpg" alt="Traffic">
+                        </a>
+                        <div class="caption">
+                            <h3>31 Novembre 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     
     </div>
     
-
+    <!-- Return to top button -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 
 
@@ -132,6 +820,33 @@
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
+
+    <!-- Return to top script -->
+    <!--script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+            $('#back-to-top').tooltip('show');
+
+        });
+    </script-->
+
+
+
 
 
 
