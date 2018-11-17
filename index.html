@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="styles/baguetteBox.min.css">
     <link rel="stylesheet" href="styles/gallery-clean.css">
 
+    <!-- Button stylesheet -->
+    <!--link rel="stylesheet" href="styles/topbutton.css"-->
 
     <!-- Return to top button styles -->
     <!--style>
@@ -94,7 +96,9 @@
 
 <body>
 
-    <a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <!--a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a-->
+
+    <!--button id="myBtn" class="js-scroll-trigger" title="Go to top">Top</button-->
 
 
     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
@@ -305,12 +309,14 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="">
-                            <img src="images/bckgnd.jpg" alt="Traffic">
+                        <a class="lightbox" href="images/11-17.jpg" onclick="document.getElementById('Beast').play(); document.getElementById('Beast').style.display = 'block'; document.getElementById('amagaho').style.display = 'none'; document.getElementById('mostraho').style.display = 'block'">
+                            <img src="images/11-17.jpg" alt="Traffic">
                         </a>
                         <div class="caption">
                             <h3>17 Novembre 2018</h3>
-                            <p></p>
+                            <p id="amagaho">Puja el volum i clica la foto!</p>
+                            <p id="mostraho" style="display:none">17/11...T'estimo tant petitsuis!!</p>
+                            <audio style="display: none; margin-left: auto; margin-right: auto" id="Beast" src="media/BeastBurden.mp3" controls preload="auto"></audio>
                         </div>
                     </div>
                 </div>
@@ -846,6 +852,11 @@
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
+
+    <!-- Top button -->
+    <!--script src="js/JqueryEasing.js"></script-->
+    <!-- Custom Scripts -->
+    <!--script src="js/scripts.js"></script-->
 
 
     <!--script>
