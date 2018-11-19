@@ -4,8 +4,8 @@
     "start_url": ".", 
     "display": "standalone",
     "orientation": "portrait",
-    "background_color": "#rgba(211, 11, 11, 0.658)",
-    "theme_color": "#rgba(211, 11, 11, 0.658)",
+    "background_color": "#D30B0BA8",
+    "theme_color": "#D30B0BA8",
     "icons": [
         {
             "src": "/images/icons/love-72x72.png",
