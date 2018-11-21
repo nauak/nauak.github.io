@@ -46,6 +46,7 @@ self.addEventListener('install', function(event) {
                     '/images/11-19.jpg',
                     '/images/11-2.jpeg',
                     '/images/11-20.jpg',
+                    '/images/11-21.jpg',
                     '/images/11-3.jpg',
                     '/images/11-4.jpg',
                     '/images/11-5.jpg',
