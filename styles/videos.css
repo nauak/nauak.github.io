@@ -1,0 +1,28 @@
+#baguetteBox-overlay .full-image video{display:inline-block;width:auto;height:auto;max-height:100%;max-width:100%;vertical-align:middle;-moz-box-shadow:0 0 8px rgba(0,0,0,.6);box-shadow:0 0 8px rgba(0,0,0,.6)}
+
+video{border:0}
+
+.tz-gallery video {
+    border-radius: 6px;
+}
+
+
+.thumbnail video {
+    object-fit: cover;
+    min-width: 300px;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 6px;
+    vertical-align: middle;
+    border: 0;
+    box-sizing: border-box;
+};
+
+
+.row{
+    margin-right: -15px;
+}

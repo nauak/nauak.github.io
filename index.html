@@ -27,6 +27,7 @@
     <!-- gallery styles -->
     <link rel="stylesheet" href="styles/baguetteBox.min.css">
     <link rel="stylesheet" href="styles/gallery-clean.css">
+    <link rel="stylesheet" href="styles/videos.css">
 
     <!-- Button stylesheet -->
     <!--link rel="stylesheet" href="styles/topbutton.css"-->
@@ -372,23 +373,25 @@
                 <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="">
-                            <img src="images/bckgnd.jpg" alt="Traffic">
+                        <a class="lightbox" href="images/11-22.jpg">
+                            <img style="filter: saturate(0%);" src="images/11-22.jpg" alt="Traffic">
                         </a>
                         <div class="caption">
                             <h3>22 Novembre 2018</h3>
-                            <p></p>
+                            <p>Gràcies per ser com ets i per estar al meu costat dia rere dia. Gràcies per ser tu. T'estimo Ivette.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="lightbox" href="">
-                            <img src="images/bckgnd.jpg" alt="Traffic">
-                        </a>
+                        <video controls src="images/11-23.mp4"></video>
                         <div class="caption">
                             <h3>23 Novembre 2018</h3>
-                            <p></p>
+                            <p style="max-height: 126px; overflow: scroll;">4:36 de la matinada, és estiu, fa olor, una olor floral, càlida, animal, especiada, celestial...és olor a gessamí. Tot i ser altes hores de la matinada hi ha algú, algú tocant les primeres notes de “More than words”. Surto a la terrassa.
+                                    Recordo l’estiu del 96 com si fos ahir. Un 17 d’Agost del 96 a les 8:26 del vespre. L’esperava,  l’esperava a ell. Teníem 17 i 21 anys. Portava els meus shorts negres estripats, la samarreta de tirants de “The Clash”,un calçat còmode, un senzill monyo i un maquillatge discret. Va ser puntual, a dos quarts de nou em va passar a buscar amb la seva vespa. Jo vivia a les afores de Sant Dalmai, ell era de Girona, vivia en un piset amagat en un carreró petit i obsolet del Barri Vell. Em va portar a sopar al seu pis i desprès varem sortir a caminar, a perdre’ns pels carrerons plens de màgia i olors florals del Barri Vell . Tant sols feia 3 setmanes que sortíem junts. Mai cap noi m’havia respectat tant com ell ho feia, d’aquella manera que només podia i sabia fer ell. Recordo que em va aturar just davant de la botiga de te, em va mirar als ulls i sense dir res em va besar amb els seus llavis carnosos i dolços, em va somriure. Un petó per a recordar. Sense dir ni fer res més vam seguir caminant.  Quan ja estàvem cansats varem anar al seu pis. Va agafar la seva guitarra clàssica, vella i desgastada, i va començar a tocar i a cantar “More than words”, tenia una veu melosa. Aquella nit va ser la primera nit que dormíem junts, una nit on els actes eres més que paraules.
+                                    Varem viure 5 mesos intensos, passionals, romàntics, tendres... semblava impossible que allò s’acabés, era massa perfecte i senzill. El 5 de gener de l’any següent em va telefonar al matí, devien ser cap a dos quarts de nou. Em va dir que havíem de parlar, que  no em preocupés. Em va dir que a les set de la tarda havia d’estar als Jardins dels Alemanys, a Girona. Instantàniament un calfred em va recórrer el cos. No podia evitar posar-me nerviosa. Vaig passar-me el dia escoltant “Extreme”. Cap a les sis i quart vaig començar-me a arreglar per anar a Girona. Vaig arribar als Jardins dels Alemanys deu minuts abans, tot i això ell ja estava allà, esperant-me. Em va mirar i immediatament vaig saber que alguna cosa no anava bé, a vegades una mirada val més que mil paraules. Li vaig demanar que anés al gra, i així ho va fer. Em va explicar que estava cansat, que se’n anava a Àfrica, que necessitava descobrir món, que no li agradava com eren les coses aquí i que si no ho feia ara no ho faria mai. En aquell moment em va caure el món a sobre, podia notar com el cor se m’anava partint en dos en cada explicació que em donava. Li vaig dir que si realment m’estimava que ho demostrés i que es quedés. Em va dir que m’estimava molt, que mai havia estimat a algú de la manera que m’estimava a mi, però que era el millor per a ell i per a mi. Em va dir: “No tens ni 18 anys, i jo ja en tinc 21. T’estimo molt però necessito fer-me un favor a mi mateix i marxar. I en part, també és el millor per a tu. Mai dubtis de que t’estimo.” El vaig contestar dient-li que què faria si li tragues aquesta paraula, t’estimo. Que llavors no podria fer les coses tant sols dient t’estimo. Em va dir que ho sentia molt però que ja estava decidit. El vaig mirar amb ulls plorosos i vaig marxar sense dir res més.
+                                    Tot i ser altes hores de la matinada hi ha algú, algú tocant les primeres notes de  “More than words”. Surto a la terrassa. Han passat 3 anys d’aquell estiu.  Intento esbrinar de qui és la silueta de l’individu que està tocant, no el reconec. Quan comença a cantar em ve al cap, és aquella veu inimitable, és la veu melosa de la qual en vaig estar tant enamorada. És ell. <br>Escrit per: <b>Ivette Vázquez Alonso</b></p>
                         </div>
                     </div>
                 </div>
@@ -403,6 +406,8 @@
                         </div>
                     </div>
                 </div>
+                     </div>
+            <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <a class="lightbox" href="">
@@ -857,8 +862,14 @@
         baguetteBox.run('.tz-gallery');
     </script>
 
-    <script src="/js/activateSW.js"></script>
-
+    <!--script src="/js/activateSW.js"></script-->
+    <!-- Remove service workers -->
+    <script>
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+         registration.unregister()
+       } })
+    </script>
     <!-- Top button -->
     <!--script src="js/JqueryEasing.js"></script-->
     <!-- Custom Scripts -->
