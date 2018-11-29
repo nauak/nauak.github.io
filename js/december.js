@@ -37,11 +37,19 @@ for (i=1; i<=31;i++){
       var todayopened = document.getElementById(daycounter);
 
       document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML = "";
-
+      todayopened.setAttribute("href","images/" + daycounter + ".jpg");
+      //console.log( todayopened.childNodes.nodeValue);
+      //todayopened.childNodes.nodeValue = "";
+//images/" + today + ".jpg
       //todayopened.setAttribute("href","");
-      
+      function prova(){
+          console.log("hi")
+      };
+      //todayopened.addEventListener("click",prova);
+      //todayopened.removeEventListener("click",a#12-03.lightbox);
+
       todayopened.onclick = function(e){  //Important canviar tots els daycounter per today perque el daycounter ja ha arribat al final del loop quan es fa click.
-        //e.preventDefault();
+        
         document.getElementById(today).nextElementSibling.childNodes[3].innerHTML = textnotseen;
         todayopened.setAttribute("href","images/" + today + ".jpg"); //introduces de right href of the image of the day 
         //This new link should be added, but before it is clicked or executed the onclick!
@@ -58,9 +66,8 @@ for (i=1; i<=31;i++){
         notyetopened.onclick = function(){ return false; };     //Invalidates any action when clicking this elements.
         notyetopened.setAttribute("href","");                   //It makes its href to be empty, otherwise you could see the image by sliding when whaching other images
         notyetopened.style = "cursor: default; pointer-events: none;"; //It makes the cursor look normal, not like in an link element. Pointer-events does nothing because return false already does it.
-
-        notyetopened.childNodes.nodeValue = "";
-        document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML = "";
+        
+        notyetopened.childNodes.nodeValue = ""; //Don't remember what this does. 
+        document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML = ""; //Hides text in p
     };
-}
-
+};
