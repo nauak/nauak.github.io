@@ -13,7 +13,7 @@ if (dd < 10){
 };
 var mm = today.getMonth() + 1; //get month returns the month beeing 0-January, 1-February, etc. until 11-December.
 today = mm + "-" + dd;
-today = "12-03";
+//today = "12-03"; just to test
 mm = 12;
 
 for (i=1; i<=31;i++){
@@ -42,11 +42,22 @@ for (i=1; i<=31;i++){
       //todayopened.childNodes.nodeValue = "";
 //images/" + today + ".jpg
       //todayopened.setAttribute("href","");
-      function prova(){
-          console.log("hi")
-      };
       //todayopened.addEventListener("click",prova);
       //todayopened.removeEventListener("click",a#12-03.lightbox);
+
+
+      //Insert the number of date:
+      
+      var today_day = i;
+      if (today_day < 10){
+          today_day = today_day.charAt(1);
+      }; //Getting rid of double single numbers (06, 07, etc.)
+      var node = document.createElement("SPAN");
+      var textnode = document.createTextNode(today_day);
+      node.appendChild(textnode);
+      node.classList.add("daynumb", "christmas1")
+      document.getElementById(daycounter).appendChild(node);
+
 
       todayopened.onclick = function(e){  //Important canviar tots els daycounter per today perque el daycounter ja ha arribat al final del loop quan es fa click.
         
@@ -57,10 +68,38 @@ for (i=1; i<=31;i++){
         todayopened.setAttribute("href","images/" + today + ".jpg"); //introduces de right href of the image of the day 
         //baguetteBox.run('.tz-gallery');
         //setTimeout(function(url) { document.dispatchEvent("a#12-03.lightbox"); }, 5000, this.href);
+        var spantoberemoved = document.getElementById(today).childNodes[3];
+
+        spantoberemoved.parentNode.removeChild(spantoberemoved);
+
+
       };
+
     };
 
-    if (daycounter > today){
+    if (daycounter > today && i < 26){
+        //Invalidate the links when it's not yet the day.
+        var notyetopened = document.getElementById(daycounter); //Takes as a variable the elements that shouldn't be opened yet because it's not the day.
+        notyetopened.onclick = function(){ return false; };     //Invalidates any action when clicking this elements.
+        notyetopened.setAttribute("href","");                   //It makes its href to be empty, otherwise you could see the image by sliding when whaching other images
+        notyetopened.style = "cursor: default; pointer-events: none;"; //It makes the cursor look normal, not like in an link element. Pointer-events does nothing because return false already does it.
+        
+        notyetopened.childNodes.nodeValue = ""; //Don't remember what this does. 
+        document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML = ""; //Hides text in p
+        
+        //Insert the number of date:
+        var future_day = i;
+        if (future_day < 10){
+           future_day = future_day.charAt(1);
+        }; //Getting rid of double single numbers (06, 07, etc.)
+        var node = document.createElement("SPAN");
+        var textnode = document.createTextNode(future_day);
+        node.appendChild(textnode);
+        node.classList.add("daynumb", "christmas1")
+        document.getElementById(daycounter).appendChild(node);
+    };
+
+    if (i > 25){
         //Invalidate the links when it's not yet the day.
         var notyetopened = document.getElementById(daycounter); //Takes as a variable the elements that shouldn't be opened yet because it's not the day.
         notyetopened.onclick = function(){ return false; };     //Invalidates any action when clicking this elements.

@@ -81,17 +81,17 @@ a {
     text-emphasis: none;
 }
 
-a> span.daynumb {
-    color: rgb(207, 169, 0);
-    position: absolute;
-    top:200px;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
 
-a:hover, a:hover span.daynumb{
-    color: rgb(226, 142, 142);
+/*
+.container{
+    color: transparent ;
+    background-color: transparent;
 }
+.gallery-container{
+    color: transparent ;
+    background-color: transparent;
+}*/
+
 
 @font-face {
     font-family: christmaseve_Numb;
@@ -103,9 +103,42 @@ a:hover, a:hover span.daynumb{
     font-family: christmastime_Symb;
     src: url(/christmasfonts/ChristmasTime_Sym.ttf);
 }
+@font-face{
+    font-family: MountainsBold_Numb;
+    src: url(/christmasfonts/MountainsofChristmas-Bold_Numb.ttf);
+}
+
+a> span.daynumb {
+    color: rgb(207, 169, 0);
+    position: absolute;
+    top:120px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+a:hover, a:hover span.daynumb{
+    color: rgb(226, 142, 142);
+}
 
 .christmas1{
-    font-family: christmaseve_Numb, 'Roboto', sans-serif;
+    font-family: MountainsBold_Numb, 'Roboto', sans-serif;
+    font-size: 300px;
+}
+
+/*Background*/
+.thumbnail{
+    background-color: transparent;
+}
+
+#decembrewrapp{
+    background-image: url(/background/FallSnowwing.gif);
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    block-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*El div container ficar margins que no podrien tenir el border*/
 }
 
 #decemberhead{
@@ -134,3 +167,16 @@ a:hover, a:hover span.daynumb{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.decembercap{
+    background-image: 
+    linear-gradient(to bottom,
+    #fff 0%, #fff 100%), url(/background/christmas_lines.jpg);
+    background-clip: content-box, padding-box;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-radius:6px;
+}
+.decembercap h3{
+    padding-top: 10px;
+};
