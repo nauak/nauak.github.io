@@ -75,6 +75,8 @@ a[href="images/bckgnd.jpg"]{
 }
 
 
+/* for DECEMBER */
+
 a {
     text-emphasis: none;
 }
@@ -94,9 +96,41 @@ a:hover, a:hover span.daynumb{
 @font-face {
     font-family: christmaseve_Numb;
     src: url(/christmasfonts/christmaseve_Numb.ttf);
+}@font-face {
+    font-family: perfchristmas_Numb;
+    src: url(/christmasfonts/Perfect_Christmas_Numb.ttf);
+}@font-face {
+    font-family: christmastime_Symb;
+    src: url(/christmasfonts/ChristmasTime_Sym.ttf);
 }
 
 .christmas1{
     font-family: christmaseve_Numb, 'Roboto', sans-serif;
-};
+}
 
+#decemberhead{
+    background-image: url(/background/DecemberBckgnd.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+#december_title{
+    /*Position of the title*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-origin: padding-box;
+
+    /*Title format*/
+    font-family: christmastime_Symb, perfchristmas_Numb, christmaseve_Numb, 'Roboto', sans-serif;
+    font-size: 90px;
+
+    background-size: 35% 50%;
+    background: -webkit-linear-gradient(rgb(244,237,135),rgb(244,237,135) 25%, rgb(245,155,73) 66%,rgb(245,155,73));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
