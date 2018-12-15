@@ -13,7 +13,7 @@ if (dd < 10){
 };
 var mm = today.getMonth() + 1; //get month returns the month beeing 0-January, 1-February, etc. until 11-December.
 today = mm + "-" + dd;
-//today = "12-03"; just to test
+//today = "12-15"
 mm = 12;
 
 for (i=1; i<=31;i++){
@@ -22,14 +22,14 @@ for (i=1; i<=31;i++){
     }; //adding a 0 in case date is between 12-1 and 12-9
 
     var daycounter = mm + "-" + i;
-
+    
     if (daycounter < today){
       var alreadyopened = document.getElementById(daycounter);
       alreadyopened.setAttribute("href","images/" + daycounter + ".jpg"); //introduces de right href of the image of the day
       alreadyopened.firstElementChild.setAttribute("src","images/" + daycounter + ".jpg");
     };
 
-    if (mm == "12" && daycounter == today){
+    if (mm == "12" && daycounter == today && daycounter != "12-15"){
         //Only activate if it's december.
       
       var textnotseen = document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML;
@@ -76,6 +76,49 @@ for (i=1; i<=31;i++){
       };
 
     };
+
+    if (daycounter == "12-15"){
+        var textnotseen = document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML;
+
+        var todayopened = document.getElementById(daycounter);
+  
+        document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML = "";
+        //todayopened.setAttribute("href","images/" + daycounter + ".jpg");
+        //console.log( todayopened.childNodes.nodeValue);
+        //todayopened.childNodes.nodeValue = "";
+  //images/" + today + ".jpg
+        //todayopened.setAttribute("href","");
+        //todayopened.addEventListener("click",prova);
+        //todayopened.removeEventListener("click",a#12-03.lightbox);
+  
+  
+        //Insert the number of date:
+        
+        //var today_day = i;
+        //if (today_day < 10){
+        //    today_day = today_day.charAt(1);
+        //}; //Getting rid of double single numbers (06, 07, etc.)
+        //var node = document.createElement("SPAN");
+        //var textnode = document.createTextNode(today_day);
+        //node.appendChild(textnode);
+        //node.classList.add("daynumb", "christmas1")
+        //document.getElementById(daycounter).appendChild(node);
+  
+  
+        todayopened.onclick = function(e){  //Important canviar tots els daycounter per today perque el daycounter ja ha arribat al final del loop quan es fa click.
+          
+          document.getElementById(today).nextElementSibling.childNodes[3].innerHTML = textnotseen;
+          todayopened.firstElementChild.setAttribute("src","images/" + "12-15" + ".mp4");
+          //baguetteBox.run('.tz-gallery');
+          //setTimeout(function(url) { document.dispatchEvent("a#12-03.lightbox"); }, 5000, this.href);
+          var spantoberemoved = document.getElementById(today).childNodes[3];
+  
+          spantoberemoved.parentNode.removeChild(spantoberemoved);
+  
+  
+        };
+  
+    }
 
     if (daycounter > today && i < 26){
         //Invalidate the links when it's not yet the day.
