@@ -23,11 +23,18 @@ for (i=1; i<=31;i++){
 
     var daycounter = mm + "-" + i;
     
-    if (daycounter < today){
+    if (daycounter < today && daycounter != "12-15"){
       var alreadyopened = document.getElementById(daycounter);
       alreadyopened.setAttribute("href","images/" + daycounter + ".jpg"); //introduces de right href of the image of the day
       alreadyopened.firstElementChild.setAttribute("src","images/" + daycounter + ".jpg");
     };
+
+    if (daycounter == "12-15" && today != "12-15"){
+        console.log("now executing");
+            var alreadyopened = document.getElementById(daycounter);
+            alreadyopened.firstElementChild.setAttribute("src","images/" + "12-15" + ".mp4");//introduces de right href of the image of the day
+
+    }
 
     if (mm == "12" && daycounter == today && daycounter != "12-15"){
         //Only activate if it's december.
@@ -77,7 +84,7 @@ for (i=1; i<=31;i++){
 
     };
 
-    if (daycounter == "12-15"){
+    if (daycounter == "12-15" && daycounter == today ){ //execute only in day 15
         var textnotseen = document.getElementById(daycounter).nextElementSibling.childNodes[3].innerHTML;
 
         var todayopened = document.getElementById(daycounter);
@@ -118,7 +125,7 @@ for (i=1; i<=31;i++){
   
         };
   
-    }
+    };
 
     if (daycounter > today && i < 26){
         //Invalidate the links when it's not yet the day.
