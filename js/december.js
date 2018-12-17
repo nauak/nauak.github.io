@@ -76,9 +76,16 @@ for (i=1; i<=31;i++){
         //baguetteBox.run('.tz-gallery');
         //setTimeout(function(url) { document.dispatchEvent("a#12-03.lightbox"); }, 5000, this.href);
         var spantoberemoved = document.getElementById(today).childNodes[3];
+        if (spantoberemoved != undefined){
+            spantoberemoved.parentNode.removeChild(spantoberemoved);
+        };
 
-        spantoberemoved.parentNode.removeChild(spantoberemoved);
-
+        if (today == "12-17"){
+            document.getElementById('Orejas').play();
+            document.getElementById('Orejas').style.display = 'block';
+            document.getElementById('mostrahoOrejas').style.display = 'block';
+            document.getElementById('amagahoOrejas').style.display = 'none';
+        };
 
       };
 
