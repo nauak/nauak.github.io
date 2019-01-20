@@ -12,6 +12,7 @@ if (dd < 10){
     dd = "0" + dd 
 };
 var mm = today.getMonth() + 1; //get month returns the month beeing 0-January, 1-February, etc. until 11-December.
+mm = 12; //added to unlock after december ---- NEEDS TO BE FIXED ---- !!!!
 today = mm + "-" + dd;
 //today = "12-15"
 mm = 12;
